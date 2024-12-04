@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="top-banner">
+        <img src="img/banner.png" alt="Promoción de verano">
+    </div>
+    <div class="game-container">
+        <h1>¡Juego del Ahorcado!</h1>
+
+        <!-- Mostrar la palabra oculta -->
+        <div class="word-container">
+            <span id="word"></span>
+        </div>
+
+        <!-- Mostrar las letras incorrectas -->
+        <div>
+            <p>Letras incorrectas: <span id="incorrectLetters"></span></p>
+        </div>
+
+        <!-- Mostrar los intentos restantes -->
+        <div>
+            <p>Intentos restantes: <span id="remainingAttempts"></span></p>
+        </div>
+
+        <!-- Mostrar la imagen del Ahorcado -->
+        <div id="hangmanImage">
+            <img src="img/0.png" id="hangman" alt="Ahorcado" />
+        </div>
+
+        <!-- Campo de entrada para adivinar letras -->
+        <input type="text" id="letterInput" maxlength="1" placeholder="Adivina una letra" />
+        <button id="guessButton">Adivinar</button>
+
+        <div id="resultMessage"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
